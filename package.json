@@ -4,6 +4,7 @@
   "description": "Improvement on SmartCharge Rewards dashboard.",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Steven Barrios",
@@ -11,5 +12,9 @@
   "dependencies": {
     "express": "^4.16.4",
     "puppeteer": "^1.13.0"
+  },
+  "engines": {
+    "node": "8.11.3",
+    "npm": "5.6.0"
   }
 }
