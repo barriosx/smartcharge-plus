@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 
 server.use(express.json());
 server.use(express.static(path.join(__dirname, 'client/build')));
-server.use('/api', smartcharge);
+server.use('/api', smartcharge); // load api for usage
 
 server.get('/',(req, res) => {
   // Send frontend
