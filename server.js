@@ -9,7 +9,7 @@ server.use(express.json());
 server.use(express.static(path.join(__dirname, 'client/build')));
 server.use('/api', smartcharge); // load api for usage
 
-server.get('/',(req, res) => {
+server.get('*',(req, res) => {
   // Send frontend
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
