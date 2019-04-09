@@ -1,0 +1,34 @@
+.stats-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.stat-name{
+  margin-top: 0;
+  color: #454545;
+  font-size: 1rem;
+}
+.stat-value {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 1.6;
+  padding-left: 0.75rem;
+
+}
+.stat-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.stat-value small {
+  color: #454545;
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+}

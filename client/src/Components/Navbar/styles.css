@@ -1,0 +1,44 @@
+.navbar {
+  padding: 0.5rem 3rem;
+  height: 3rem;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar ul li {
+  margin: auto 0px;
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: #003E89;
+  font-weight: 600;
+  transition: color 0.5s ease-out;
+  margin-left: 1rem;
+  margin-right: 0rem;
+}
+.navbar a:hover {
+  color: #005BC9;
+  transition: color 0.45s ease;
+}
+.navbar-flex {
+  display: flex;
+}
+.navbar-search {
+  padding-left: 0.5rem;
+}
+.header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  flex: 1;
+  color: #003E89;
+}
+.search {
+  height: 100%;
+  padding: none;
+}

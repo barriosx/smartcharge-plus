@@ -1,0 +1,33 @@
+table {
+  display: table;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+.table {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+}
+.table td, .table th {
+  font-size: 1.15rem;
+  border-top-width: 0;
+  border-bottom: 1px solid;
+  border-color: #ebedf2;
+  padding: 0 25px;
+  height: 60px;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+}
+.table th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-bottom: 2px solid #dee2e6;
+  color: #191A1A;
+}
+.table tr:last-child td {
+  border-bottom: none;
+}

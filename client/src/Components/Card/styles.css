@@ -1,0 +1,29 @@
+.card {
+  position: relative;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 2px 6px 15px 0 rgba(69,65,78,.1);
+  -moz-box-shadow: 2px 6px 15px 0 rgba(69,65,78,.1);
+  box-shadow: 2px 6px 15px 0 rgba(69,65,78,.1);
+  border-radius: .25rem;
+}
+.card .card-header {
+  padding: 1.5rem 3rem;
+}
+.card-header h3 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.card .card-body {
+  font-weight: 500;
+  padding: 0rem 3rem 1.5rem;
+  color: #2C2C2B;
+
+}
