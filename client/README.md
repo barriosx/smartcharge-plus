@@ -1,68 +1,32 @@
+# SmartCharge Plus
+An annex to the SmartCharge Rewards™ dashboard.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Context
 
-In the project directory, you can run:
+I stumbled upon [Puppeteer](https://github.com/GoogleChrome/puppeteer), which I found to be awesome since I have been interested in the world of browser automation and web scraping. So I developed this app to help myself learn the library, while making an app that would help me automate some calcuations I found myself doing monthly.
 
-### `npm start`
+I am a proud owner of an eletric vehicle, and here in NY, there is a cool program called [SmartCharge Rewards](https://www.fleetcarma.com/smartchargenewyork/) that I am a part of.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Fleetcarma has partnered with Con Edision in New York to help track EV stats and automatically earn rewards each month by charging in the Con Edison service territory.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+I share my electric bill, so I wanted to solve the problem of automating each months total cost of charging my car.
 
-### `npm test`
+As a MVP, my app aims to leverage the Puppeteer library find out how much electric I have consumed from the 1st of the curent month until todays date. Then I can calcuate how much I expect to pay in utility to consume that quantity.  
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ReactJS
+- NodeJS
+- ExpressJS
+- Puppeteer
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Possible Enhancements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+There are many avenues that can be taken from here. I have thought about a major enhancement to this app:
 
-### `npm run eject`
+1. Provide a view of on how much electric was consumed and how much it cost for a given day, week, or date range.
+2. Adding a login form so that other SmartCharge users can also use this app and have a more insightful look on the economic impact of their charging.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
