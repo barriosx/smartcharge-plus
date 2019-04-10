@@ -4,7 +4,9 @@ const usr = process.env.USERNAME;
 const pw = process.env.PASSWORD;  
 
 async function getSmartCharge() {
-  const browser = await puppeteer.launch()
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox'] // Specify –no-sandbox to run Puppeteer on Heroku
+})
   const page = await browser.newPage()
   var responseData = {};
   // EventEmmiter set up
