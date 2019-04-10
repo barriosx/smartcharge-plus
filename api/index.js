@@ -1,5 +1,8 @@
 const puppeteer = require('puppeteer');
-const CREDS = require('../cred'); // hide these variables
+// const CREDS = require('../cred'); // hide these variables in a senstive file
+const usr = process.env.USERNAME;
+const pw = process.env.PASSWORD;  
+
 async function getSmartCharge() {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
@@ -16,8 +19,8 @@ async function getSmartCharge() {
   // Login to dashboard 
   await page.goto('https://smartchargerewards.fleetcarma.com/login')
   await page.waitForSelector('button.auth0-lock-submit', { visible: true })
-  await page.type('input[name="email"]', CREDS.username) 
-  await page.type('input[name="password"]', CREDS.password) 
+  await page.type('input[name="email"]', usr) 
+  await page.type('input[name="password"]', pw) 
   await page.click('button.auth0-lock-submit') // Clicking login button
 
   await page.waitForNavigation({ waitUntil: 'networkidle0'}) // wait until we successfully login
