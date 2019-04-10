@@ -34,13 +34,12 @@ async function getSmartCharge() {
 
 module.exports = (router) => {
   router.get('/', (request,response) => {
-    // getSmartCharge().then(data => {
-    //   response.status(200).json({success: true, data: data});
-    // })
-    // .catch(err => {
-    //   response.status(500).json({success: false, message: err });
-    // })
-    response.status(200).json({success: true, data: "Hello World"})
+    getSmartCharge().then(data => {
+      response.status(200).json({success: true, data: data});
+    })
+    .catch(err => {
+      response.status(500).json({success: false, message: err });
+    })
   });
   return router;
 }
