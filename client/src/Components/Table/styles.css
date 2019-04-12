@@ -31,3 +31,48 @@ thead {
 .table tr:last-child td {
   border-bottom: none;
 }
+
+@media only screen and (max-width: 599px) {
+  /* Tablet-Lanscape */
+  .table td, .table th {
+    padding: 0px;
+    font-size: 0.75rem;
+    height: 40px;
+
+  }
+  .table th {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* Tablet-Portrait */
+  .table td, .table th {
+    padding: 0 5px;
+    font-size: 1rem;
+  }
+  .table th {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* Tablet-Lanscape */
+  .table td, .table th {
+    padding: 0 15px;
+    font-size: 1rem;
+  }
+  .table th {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop */
+ 
+}
+
+@media only screen and (min-width: 1800px) {
+  /* Big Desktop */
+  
+}

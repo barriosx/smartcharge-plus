@@ -32,3 +32,59 @@
   margin-left: 0.25rem;
   font-size: 0.75rem;
 }
+
+@media only screen and (max-width: 599px) {
+  /* Tablet-Lanscape */
+  .stat-value {
+    font-size: 1.5rem;
+  }
+  .stats-wrapper {
+    flex-direction: column;
+  }
+  .stat {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .stat-line {
+    justify-content: flex-start
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* Tablet-Portrait */
+
+  .stats-wrapper {
+    flex-direction: column;
+  }
+  .stat {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .stat-line {
+    justify-content: flex-start
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* Tablet-Lanscape */
+  .fa-3x {
+    font-size: 2.5rem;
+  }
+  .stat-value {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop */
+  .fa-3x {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  /* Big Desktop */
+  .fa-3x {
+    font-size: 3.25rem;
+  }
+}
