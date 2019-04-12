@@ -42,3 +42,31 @@
   height: 100%;
   padding: none;
 }
+@media only screen and (max-width: 599px) {
+  /* Tablet-Lanscape */
+  .navbar {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* Tablet-Portrait */
+  .navbar {
+    padding: 0.5rem 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* Tablet-Lanscape */
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop */
+ 
+}
+
+@media only screen and (min-width: 1800px) {
+  /* Big Desktop */
+  
+}

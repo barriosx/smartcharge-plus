@@ -73,6 +73,14 @@
   .stat-value {
     font-size: 1.25rem;
   }
+  .stat {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .stats-wrapper {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -80,11 +88,27 @@
   .fa-3x {
     font-size: 3rem;
   }
+  .stat {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .stats-wrapper {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (min-width: 1800px) {
   /* Big Desktop */
   .fa-3x {
     font-size: 3.25rem;
+  }
+  .stats-wrapper {
+    flex-direction: row;
+  }
+  .stat {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 }
