@@ -25,8 +25,9 @@ As a MVP, my app aims to leverage the Puppeteer library find out how much electr
 
 ## Possible Enhancements
 
-There are many avenues that can be taken from here. I have thought about a major enhancement to this app:
+There are many avenues that can be taken from here. I have thought about major enhancements to this app:
 
-1. Provide a view of on how much electric was consumed and how much it cost for a given day, week, or date range.
-2. Adding a login form so that other SmartCharge users can also use this app and have a more insightful look on the economic impact of their charging.
+1. ****Reduce**** the response time for my api call that does the "Puppeteer-ing" of the SmartCharge Rewards dashboard. Currently, it seems to take ~12s for the data to render onto the client.
+2. Provide a view of on how much electric was consumed and how much it cost for a given day, week, or date range.
+3. Adding a login form so that other SmartCharge users can also use this app and have a more insightful look on the economic impact of their charging.
 
