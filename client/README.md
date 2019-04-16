@@ -23,6 +23,19 @@ As a MVP, my app aims to leverage the Puppeteer library find out how much electr
 - ExpressJS
 - Puppeteer
 
+## Challenges
+
+Being that Fleetcarma does not have a documented API that one can use to get data, we have to use puppeteer to help us intercept data **after** a user has logged in.
+
+Another challenege was learning the Puppeteer library and having it work once it was deployed on a cloud platform like Heroku. Puppeteer relies on layers of sandboxing, which is supposed to protect the host enviornment from unsafe web content. Thus I needed to specify **–no-sandbox**: 
+~~~~
+const browser = await puppeteer.launch({
+  args: ['--no-sandbox', '--disable-setuid-sandbox'] // Specify –no-sandbox to run Puppeteer on Heroku
+})
+~~~~
+
+Lastly, Heroku needs a buildpack so that Puppeteer can then be executed on a dyno instance inside Heroku. Buildpacks are composed of a set of scripts, and depending on the programming language, the scripts will retrieve dependencies, output generated assets or compiled code, and more. The buildpack I used was from [Jon Tweks](https://github.com/jontewks/puppeteer-heroku-buildpack).
+
 ## Possible Enhancements
 
 There are many avenues that can be taken from here. I have thought about major enhancements to this app:
