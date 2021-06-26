@@ -12,7 +12,7 @@ async function getSmartCharge() {
   // EventEmmiter set up
   // Intercept xhr request that contain the data I need 
   page.on('response', response => {
-    if ((response.url().includes('summary')) && (response.status() == 200)) {
+    if ((response.url().includes('/summar')) && (response.status() == 200)) {
       response.json().then(data => Object.assign(responseData, data))
       .catch(err => console.log(`Ran into error, here it is: \n${err}\nNext time we will ignore this`))
     }
